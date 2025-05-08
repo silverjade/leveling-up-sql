@@ -1,42 +1,42 @@
 #	Leveling Up with SQL
 
-This is support repository for [*Leveling Up with SQL*](https://link.springer.com/book/10.1007/978-1-4842-9685-1) by Mark Simon (Apress, 2023).
+Mark Simon이 집필한 《Leveling Up with SQL》(Apress, 2023)의 보조 자료 저장소입니다.
 
 [comment]: #cover
 ![Cover image](978-1-4842-9684-4.jpg)
 
-Release v1.0 corresponds to the code in the published book, without corrections or updates.
+버전 v1.0은 출간된 책에 포함된 코드와 동일하며, 수정이나 업데이트는 포함되어 있지 않습니다.
 
 -	[Downloading the Sample Database](#sample-database)
 -	[The Exercise Files](#exercise-files)
 
-##	Sample Database
+##	샘플 데이터베이스 다운로드
 
-If you want to follow along with the samples, you should install the sample database. You can get a script file in one of three ways:
+예제들을 따라 해보려면 샘플 데이터베이스를 설치해야 합니다. 샘플 데이터베이스를 얻는 방법은 세 가지가 있습니다:
 
--	[Download one of the static script files](#static-script-files)
+-	[정적(Static) 스크립트 파일 다운로드](#static-script-files)
 
-	This is a collection of sample script files stored here.
+	이 저장소에 저장되어있는 샘플 스크립트 파일 모음입니다.
 
--	[Download one of the dynamic script files](#dynamic-script-files)
+-	[동적(Dynamic) 스크립트 파일 다운로드](#dynamic-script-files)
 
-	This will generate random sample data to make the sample a little more unpredictable.
+	다양한 연습을 해볼 수 있도록 무작위로 생성된 샘플 데이터를 포함한 스크립트입니다.
 
--	[Visit the Sample Database site](#sample-database-site)
+-	[샘플 데이터베이스 사이트 방문하기](#sample-database-site)
 
-	Here you can choose more options to generate one or more sample database scripts.
+	다양한 옵션을 선택해 샘플 데이터베이스 스크립트를 생성할 수 있습니다.
 
-All three methods will give you essentially the same database. The difference will be in whether the actual data varies.
+세 가지 방법 모두 기본적으로 동일한 데이터베이스 구조를 제공합니다. 차이점이 있다면 실제 데이터 값이 고정되어 있는지, 무작위로 생성되는지 입니다.
 
-###	Using the Scripts
+###	스크립트 사용법
 
-1.	Using your Database Client, create a new database. Call it something like __bookworks__.
+1.	데이터베이스 클라이언트를 통해 새 데이터베이스를 생성합니다. 이름은 __bookworks__ 와 같이 설정하면 됩니다.
 
-2.	Open and run the downloaded script file for your new database.
+2.	앞서 다운로드한 스크립트 파일을 열어 새로 만든 데이터베이스에 실행합니다.
 
-###	Static Script Files
+###	정적(Static) 스크립트 파일
 
-The simplest way to get the database is to get one of the following for your DBMS:
+사용 중인 DBMS에 맞는 스크립트 파일을 받으면 쉽게 데이터베이스를 준비할 수 있습니다.
 
 -	[PostgreSQL](https://github.com/Apress/getting-started-sql-databases/blob/master/static-scripts/books-pgsql-10-script.sql)
 -	[SQLite](https://github.com/Apress/getting-started-sql-databases/blob/master/static-scripts/books-sqlite-script-script.sql)
@@ -46,9 +46,9 @@ The simplest way to get the database is to get one of the following for your DBM
 	-	[Oracle (Plain)](https://github.com/Apress/getting-started-sql-databases/blob/master/static-scripts/books-oracle-12-script.sql)
 	-	[Oracle (SQL Plus)](https://github.com/Apress/getting-started-sql-databases/blob/master/static-scripts/books-oracle-12-plus-script.sql)
 
-If you’re feeling a bit more adventurous, and you want your data to be less predictable, you can use a Dynamic Script File instead.
+만약 데이터를 좀 더 다양하게 다루고 싶다면, 동적(Dynamic) 스크립트 파일을 사용하는 것도 좋은 방법입니다.
 
-###	Dynamic Script Files
+###	동적(Dynamic) Script Files
 
 The following links will generate database script files similar to the static script files above.
 
