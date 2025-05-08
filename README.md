@@ -34,7 +34,7 @@ Mark Simon이 집필한 《Leveling Up with SQL》(Apress, 2023)의 보조 자�
 
 2.	앞서 다운로드한 스크립트 파일을 열어 새로 만든 데이터베이스에 실행합니다.
 
-###	정적(Static) 스크립트 파일
+###	정적 스크립트 파일
 
 사용 중인 DBMS에 맞는 스크립트 파일을 받으면 쉽게 데이터베이스를 준비할 수 있습니다.
 
@@ -46,13 +46,12 @@ Mark Simon이 집필한 《Leveling Up with SQL》(Apress, 2023)의 보조 자�
 	-	[Oracle (Plain)](https://github.com/Apress/getting-started-sql-databases/blob/master/static-scripts/books-oracle-12-script.sql)
 	-	[Oracle (SQL Plus)](https://github.com/Apress/getting-started-sql-databases/blob/master/static-scripts/books-oracle-12-plus-script.sql)
 
-만약 데이터를 좀 더 다양하게 다루고 싶다면, 동적(Dynamic) 스크립트 파일을 사용하는 것도 좋은 방법입니다.
+만약 데이터를 좀 더 다양하게 다루고 싶다면, 동적 스크립트 파일을 사용하는 것도 좋은 방법입니다.
 
-###	동적(Dynamic) Script Files
+###	동적 스크립트 파일
 
-The following links will generate database script files similar to the static script files above.
-
-The difference is that the dynamic scripts will have different content every time you download.
+아래 링크들은 앞서 소개한 정적 스크립트 파일과 유사한 데이터베이스 스크립트를 생성해줍니다.
+다만 동적 스크립트는 매번 다운로드할 때마다 내용이 달라진다는 차이점이 있습니다.
 
 -	PostgreSQL
 
@@ -82,35 +81,35 @@ The difference is that the dynamic scripts will have different content every tim
 	-	[From version 12c (SQLPlus)](https://sample-db.net/?dbmss[]=oracle-12-plus&dbmss[]=oracle-23c&db=books&br=crlf&refresh&extra-tables[]=towns&extra-tables[]=countries&exercises)
 	-	[From version 23c (SQLPlus)](https://sample-db.net/?dbmss[]=oracle-23c-plus&db=books&br=crlf&refresh&extra-tables[]=towns&extra-tables[]=countries&exercises)
 
-This will download a freshly randomised script for current versions of you preferred DBMS.
+위 링크를 통해 각 DBMS에 맞는 무작위 샘플 데이터를 포함한 최신 스크립트를 받을 수 있습니다.
 
-If you want to download more than one script, or you want to vary the options, read the next section.
+스크립트를 여러 개 다운로드하거나 다양한 설정을 바꾸고 싶다면 다음 섹션을 참고하세요.
 
-###	Sample Database Site
+###	샘플 데이터베이스 사이트
 
 [https://www.sample-db.net/](https://www.sample-db.net/)
 
-The full download page looks like this:
+위 사이트의 전체 다운로드 페이지는 다음과 같습니다.
 
 <img src="images/sample-db.png" alt="Sample DB Site" width="50%">
 
-This will download a script to generate the sample database. The sample is re-generated every time with random values.
+이곳에서 샘플 데이터베이스를 생성하는 SQL 스크립트를 다운로드할 수 있습니다.
+샘플은 매번 다운로드 시 무작위 값으로 재생성됩니다.
 
-Choose the following options:
+설정방법
 
-1.	Choose a refresh date. The sample sales data will be calculated up to this date.
+1.	데이터 생성 기준 날짜 선택
+	샘플 매출 데이터는 이 날짜까지의 데이터를 기준으로 생성됩니다.
+	기본값 그대로 두어도 무방합니다.
 
-	You can leave this at the default.
+2.	샘플 데이터베이스 선택
+	이 책에서는 데이터베이스 이름을 __bookworks__ 로 설정했습니다.
 
-2.	Select the Sample Database
+3.	DBMS 선택
 
-	For this book the sample is expected to be called __bookworks__.
+	하나 이상의 DBMS를 선택할 수 있습니다.
 
-3.	Select the DBMS
-
-	You can choose more than one if you like.
-
-	For Oracle, there are some quirks in the script which may not be understood by your particular client. You can try both scripts and see which one doesn’t have any errors.
+	Oracle의 경우 클라이언트에 따라 일부 스크립트가 호환되지 않을 수 있으므로, 두 가지 형식(Plain, SQLPlus)을 모두 시도해보는 것이 좋습니다.
 
 4.	Select the Additional `Towns` and `Countries` tables.
 
