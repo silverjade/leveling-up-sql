@@ -111,21 +111,19 @@ Mark Simon이 집필한 《Leveling Up with SQL》(Apress, 2023)의 보조 자�
 
 	Oracle의 경우 클라이언트에 따라 일부 스크립트가 호환되지 않을 수 있으므로, 두 가지 형식(Plain, SQLPlus)을 모두 시도해보는 것이 좋습니다.
 
-4.	Select the Additional `Towns` and `Countries` tables.
+4.	`도시(Towns)` 및 `국가(Countries)` 테이블 선택
 
-5.	The Exercise file includes the sample SQL code from the book.
+5.	연습 파일에는 책에 수록된 샘플 SQL 코드가 포함되어 있습니다.
 
-6.	Select the Line Break
+6.	줄바꿈 문자(Line Break) 설정
+	macOS 또는 리눅스에서는 __LF__ 를 사용하고 Windows에서는 캐리지 리턴과 줄바꿈 조합인 __CRLF__ 을 사용합니다. 대부분의 클라이언트에서는 무엇을 사용하든 큰 문제가 되지 않습니다.
 
-	If you’re doing this on macOS or Linux, the standard line break is the __LF__ character. On Windows, you use the __CRLF__ combination. However, it probably doesn’t matter in most clients.
+7.	생성된 __Download__ 링크 클릭
+	하나의 데이터베이스 스크립트만 선택했다면, `.sql` 확장자를 가진 파일로 다운로드됩니다. 여러 개를 선택했다면, Zip 파일로 압축되어 다운로드 됩니다.
 
-7.	Click on the generated __Download__ link.
+##	연습 파일
 
-	If you select a single database script, it will be downloaded as a single file with the `.sql` extension. If you choose more than one database file, they will be packaged in Zip file.
-
-##	Exercise Files
-
-The SQL samples in the text are there for you try on your database client. They have also been gathered in single sql files for your convenience:
+책에 등장하는 SQL 예제들을 여러분의 데이터베이스 클라이언트에서 직접 실행해볼 수 있도록 구성되어있습니다. 각 DBMS에 맞는 단일 SQL 파일로도 제공합니다.
 
 -	[PostgreSQL](https://github.com/Apress/leveling-up-sql/blob/master/exercise-files/postgresql.sql)
 -	[SQLite](https://github.com/Apress/leveling-up-sql/blob/master/exercise-files/sqlite.sql)
